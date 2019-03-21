@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "name": "conventional-changelog-config",
+  "description": "conventional-changelog config preset",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint *.js --exclude node_modules && jscs *.js",
+    "test": "mocha --timeout 30000 && npm run-script lint",
+    "test-windows": "mocha --timeout 30000"
+  },
+  "homepage": "https://github.com/Creabine/conventional-changelog-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Creabine/conventional-changelog-config.git"
+  },
+  "author": "Creabine <creabine@foxmail.com>",
+  "contributors": [],
+  "license": "MIT",
+  "dependencies": {
+    "editor": "1.0.0",
+    "find-config": "0.3.0",
+    "temp": "0.8.3",
+    "winston": "2.1.0",
+    "word-wrap": "1.1.0",
+    "inquirer": "1.2.3"
+  },
+  "devDependencies": {
+    "better-than-before": "^1.0.0",
+    "conventional-changelog-core": "^2.0.5",
+    "git-dummy-commit": "^1.2.0",
+    "shelljs": "^0.8.0",
+    "through2": "^2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Creabine/conventional-changelog-config/issues"
+  },
+  "keywords": [
+    "conventional-changelog",
+    "config",
+    "preset"
+  ]
+}
