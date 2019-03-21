@@ -1,8 +1,7 @@
 
 > [conventional-changelog](https://github.com/ajoslin/conventional-changelog) [config](https://github.com/Creabine/conventional-changelog-config) preset
 
-
-How to use:
+How to use:
 
 ```
 npm install conventional-changelog
