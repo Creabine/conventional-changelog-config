@@ -4,7 +4,7 @@ module.exports = {
   link: {
     host: '',
     owner: '',
-    repository: '',
+    repository: ''
   },
   typeTitle: {
     feat: 'Features',
@@ -15,7 +15,7 @@ module.exports = {
     style: 'Styles',
     refactor: 'Code Refactoring',
     test: 'Tests',
-    chore: 'Chores',
+    chore: 'Chores'
   },
   commitHashLength: 10
 };

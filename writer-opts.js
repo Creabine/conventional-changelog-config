@@ -16,7 +16,7 @@ function readConfigFile () {
   const changelogConfig = findConfig.require(CONFIG_NAME, {home: false});
   if (changelogConfig) {
     return changelogConfig;
-  } else{
+  } else {
     return false;
   }
 }
