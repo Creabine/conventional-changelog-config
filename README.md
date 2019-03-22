@@ -21,7 +21,7 @@ module.exports = {
     repository: 'repository',
   },
   typeTitle: {
-    feat: 'Features 1',
+    feat: 'Features 1',
     fix: 'Bug Fixes 2',
     perf: 'Performance Improvements 3',
     revert: 'Reverts 4',
@@ -38,7 +38,8 @@ module.exports = {
 
 "scripts": {
   "changelog": "conventional-changelog -p config -i CHANGELOG.md -s"
-},
+}
 
+npm run changelog
 
 ```
