@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "conventional-changelog-config",
   "description": "conventional-changelog config preset",
   "main": "index.js",
