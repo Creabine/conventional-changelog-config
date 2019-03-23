@@ -2,19 +2,20 @@
 
 const compareFunc = require(`compare-func`);
 const Q = require(`q`);
+const findConfig = require('find-config');
 const readFile = Q.denodeify(require(`fs`).readFile);
 const resolve = require(`path`).resolve;
 
-
-
 const CONFIG_NAME = 'changelog.config.js';
 const CONFIG_EXAMPLE_LOCATION = './changelog.config.EXAMPLE.js';
-const findConfig = require('find-config');
 
 function readConfigFile () {
   // First try to find the changelog.config.js config file
   const changelogConfig = findConfig.require(CONFIG_NAME, {home: false});
   if (changelogConfig) {
+    if (!changelogConfig.typeTitle) {
+      changelogConfig.typeTitle = {};
+    }
     return changelogConfig;
   } else {
     return false;
